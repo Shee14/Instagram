@@ -3,13 +3,13 @@ package com.hooks;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.baseclass.Baseclass;
+import com.baseclass.BaseclassInsta;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class Hooks extends Baseclass {
+public class Hooks extends BaseclassInsta {
 	
 	@Before
 	public static void beforeHooks () {

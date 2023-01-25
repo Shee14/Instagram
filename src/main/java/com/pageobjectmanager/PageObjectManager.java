@@ -2,10 +2,10 @@ package com.pageobjectmanager;
 
 import org.openqa.selenium.WebDriver;
 
-import com.baseclass.Baseclass;
+import com.baseclass.BaseclassInsta;
 import com.locators.InstagramLogin;
 
-public class PageObjectManager extends Baseclass {
+public class PageObjectManager extends BaseclassInsta {
 	
 	public PageObjectManager(WebDriver wdriver) {
 		this.driver = wdriver;

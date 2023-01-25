@@ -7,10 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\java\\com\\feature\\Instagram.feature", glue = { "com.stepdefinition",
-		"com.hooks" }, stepNotifications = true, dryRun = true, monochrome = true, plugin = {
+		"com.hooks" }, stepNotifications = true, dryRun = false, monochrome = true, plugin = {
 				"html: target\\report\\Instagram.html",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"json:target\\report\\Instagram_j.json " }, publish = true)
+				"json:target\\report\\Instagram_j.json ",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+			 publish = true)
 
 public class Runner {
 

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.baseclass.Baseclass;
+import com.baseclass.BaseclassInsta;
 
-public class InstagramLogin extends Baseclass{
+public class InstagramLogin extends BaseclassInsta{
 	
 	public InstagramLogin(WebDriver wdriver) {
 		this.driver = wdriver;
@@ -34,7 +34,7 @@ public class InstagramLogin extends Baseclass{
 		return password;
 	}
 	
-	@FindBy(xpath = "//p[text()='Sorry, your password was incorrect. Please double-check your password.']")
+	@FindBy(xpath = "//p[text()='There was a problem logging you into Instagram. Please try again soon.']")
 	public WebElement errorText;
 	
 
