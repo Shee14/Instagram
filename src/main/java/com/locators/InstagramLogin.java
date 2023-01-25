@@ -34,7 +34,7 @@ public class InstagramLogin extends BaseclassInsta{
 		return password;
 	}
 	
-	@FindBy(xpath = "//p[text()='There was a problem logging you into Instagram. Please try again soon.']")
+	@FindBy(id = "slfErrorAlert")
 	public WebElement errorText;
 	
 

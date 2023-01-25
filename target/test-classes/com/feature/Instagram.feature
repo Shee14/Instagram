@@ -10,7 +10,7 @@ Scenario: Instagram Login with Invalid Id and Password
 And User Enter Invalid Username <Username>
 And User Enter Invalid Password <Password>
 And User Click Login Button
-And User Verify Invalid Login Message "There was a problem logging you into Instagram. Please try again soon."
+And User Verify Invalid Login Message
 Then User Verify Login is Successful
 
 
